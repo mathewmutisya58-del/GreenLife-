@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GreenLife - Climate Action</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="logo">
+    <svg class="logo-icon" viewBox="0 0 80 80" width="44" height="44" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+            <!-- High-Contrast Vibrant Green Gradient -->
+            <linearGradient id="boldGreenGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#4caf50" />
+                <stop offset="100%" stop-color="#1b5e20" />
+            </linearGradient>
+
+            <!-- Soft Drop Shadow -->
+            <filter id="eye-catcher-shadow" x="-30%" y="-30%" width="160%" height="160%">
+                <feDropShadow dx="0" dy="2" stdDeviation="1.5" flood-color="#1b5e20" flood-opacity="0.25"/>
+            </filter>
+        </defs>
+
+        <!-- Centered Group inside 80x80 canvas -->
+        <g transform="translate(40, 40) rotate(-35) translate(-32, -30)" filter="url(#eye-catcher-shadow)">
+            
+            <!-- Bold Diagonal Infinity Loop -->
+            <path d="M 18 30 C 7 16, 1 21, 1 30 C 1 39, 7 44, 18 30 C 29 16, 36 16, 47 30 C 58 44, 64 39, 64 30 C 64 21, 58 16, 47 30 C 36 44, 29 44, 18 30 Z" 
+                  fill="none" 
+                  stroke="url(#boldGreenGrad)" 
+                  stroke-width="6.5" 
+                  stroke-linecap="round" 
+                  stroke-linejoin="round"/>
+
+            <!-- Enlarged Prominent Leaf Accent -->
+            <g transform="translate(47, 30)">
+                <path d="M 0 -13 C 8 -13, 11 -4, 10 3 C 9 9, 4 12, 0 16 C -4 12, -9 9, -10 3 C -11 -4, -8 -13, 0 -13 Z" 
+                      fill="url(#boldGreenGrad)" />
+                <path d="M 0 -9 L 0 10" stroke="#ffffff" stroke-width="2" stroke-linecap="round"/>
+            </g>
+
+        </g>
+    </svg>
+
+    <span class="logo-text">GreenLife</span>
+</div> 
+</div>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#activities">Activities</a>
+        <a href="#donate" class="donate-nav-btn">Donate Now</a>
+    </nav>
+</header>
+
+<section class="hero" id="about">
+    <div class="hero-content">
+        <img src="./images/club.jpg" alt="People we work with">
+        <h1>Empowering Communities for a Greener Tomorrow</h1>
+        <p>We are a school-based climate initiative focused on leadership, education, and taking real action to transition our communities into replicable climate models.</p>
+        <a href="#donate" class="cta-button">Support Our Mission</a>
+    </div> 
+</section>        
+
+<section class="hero" id="about">
+    <div class="hero-content">
+        <img src="./images/club.jpg" alt="People we work with">
+        <h1>Empowering Communities for a Greener Tomorrow</h1>
+        <p>We are a school-based climate initiative focused on leadership, education, and taking real action to transition our communities into replicable climate models.</p>
+        <a href="#donate" class="cta-button">Support Our Mission</a>
+    </div> 
+</section>        
+
+<section class="activities-section" id="activities">
+    <h2>What We Do to Educate & Act</h2>
+    <p class="section-subtitle">Take a look at how we are driving change on the ground.</p>
+    
+    <div class="activity-grid">
+        <div class="activity-card">
+            <img src="./images/tree planting.jpg" alt="Children planting trees">
+            <h3>Tree Planting Initiatives</h3>
+            <p>We engage students and community members in active reforestation, planting trees to revive ecosystems and teach practical climate stewardship.</p>
+        </div>
+
+        <div class="activity-card">
+            <img src="./images/Educate.jpeg" alt="Climate education session">
+            <h3>Environmental Education</h3>
+            <p>Knowledge is power. We lead interactive sessions to raise awareness about sustainability, waste management, and practical conservation strategies.</p>
+        </div>
+
+       <div class="activity-card">
+    <img src="./images/WhatsApp Image 2026-04-22 at 1.27.24 PM.jpeg" alt="Watering the Trees">
+    <h3>Nurturing Growth & The Future</h3>
+    <p>It’s not just about planting; it’s about keeping things alive.</p>
+</div>
+
+<div class="activity-card">
+    <img src="./images/WhatsApp Image 2026-04-22 at 1.39.46 PM - Copy.jpeg" alt="Collaboration">
+    <h3>Hand-in-Hand Mentorship</h3>
+    <p>We are turning schoolyards into training grounds for tomorrow's climate leaders...</p>
+</div>
+    </div>
+</section>
+
+<section class="login-section" id="login">
+    <div class="login-container">
+        <h2>Member Login</h2>
+        <p class="login-subtitle">Access your GreenLife tracking portal</p>
+        <form class="login-form" onsubmit="handleLogin(event)">
+            <div class="input-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" placeholder="Enter your email" required>
+            </div>
+            <div class="input-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="Enter your password" required>
+            </div>
+            <button type="submit" class="login-btn">Log In</button>
+        </form>
+    </div>
+</section>
+
+<section class="donate-section" id="donate">
+    <div class="donate-container">
+        <h2>Make a Difference Today</h2>
+        <p>Your support helps us scale our educational materials, provide tools for school clubs, and expand our environmental outreach.</p>
+        
+        <div class="donation-frequency">
+            <button class="frequency-btn active" onclick="selectFrequency('once')">Donate Once</button>
+            <button class="frequency-btn" onclick="selectFrequency('monthly')">Donate Monthly</button>
+        </div>
+
+        <div class="donation-slots">
+            <div class="donation-slot-card">
+                <span class="badge">Local (Kenya)</span>
+                <h3>Mobile Money (M-Pesa)</h3>
+                <p class="pay-detail"><strong>Paybill:</strong> 247247</p>
+                <p class="pay-detail"><strong>Account No:</strong> GREENLIFE</p>
+                <p class="frequency-text" id="mpesa-freq">Frequency: One-time gift</p>
+            </div>
+
+            <div class="donation-slot-card featured">
+                <span class="badge international">Global</span>
+                <h3>International Supporters</h3>
+                <p class="pay-detail">Donate securely using Credit/Debit Cards, PayPal, or Google Pay from anywhere in the world.</p>
+                <button class="donate-now-btn">Pay Globally</button>
+                <p class="frequency-text" id="card-freq">Frequency: One-time gift</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+    function selectFrequency(frequency) {
+        const buttons = document.querySelectorAll('.frequency-btn');
+        buttons.forEach(btn => btn.classList.remove('active'));
+        
+        event.target.classList.add('active');
+
+        const mpesaText = document.getElementById('mpesa-freq');
+        const cardText = document.getElementById('card-freq');
+
+        if (frequency === 'monthly') {
+            mpesaText.innerHTML = "Frequency: <strong>Monthly Support</strong>";
+            cardText.innerHTML = "Frequency: <strong>Monthly Subscription</strong>";
+        } else {
+            mpesaText.innerHTML = "Frequency: One-time gift";
+            cardText.innerHTML = "Frequency: One-time gift";
+        }
+    }
+
+    function handleLogin(event) {
+        event.preventDefault();
+        const email = document.getElementById('email').value;
+        alert(`Logging in with: ${email}\n(Connection to backend secure server coming next!)`);
+    }
+</script>
+
+</body>
+</html>
